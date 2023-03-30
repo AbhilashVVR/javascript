@@ -9,7 +9,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                dir('users/tests/') { 
+                    sh 'ls -la'
+                  }
             }
         }
         stage('Deploy') {
