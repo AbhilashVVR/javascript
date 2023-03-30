@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..' > testing.txt
+                echo 'Building..'
             }
         }
         stage('Test') {
