@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('users/tests/') { 
+                dir('/') {
+                    sh 'cd /'
                     sh 'ls -la'
                   }
             }
